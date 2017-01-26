@@ -56,6 +56,11 @@ module.exports = (robot) ->
     # make this less spammy
     if Math.random() < 0.2
       res.send "but he's not course 6"
+      
+  robot.hear /misha/i, (res) ->
+    # make this less spammy
+    if Math.random() < 0.1
+      res.send "Did you mean: \"fat boi\"?"
 
   dootDoot = """```
 thank mr skeltal
